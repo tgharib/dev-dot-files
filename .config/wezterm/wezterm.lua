@@ -35,6 +35,7 @@ return {
        }
      },
   },
+  default_prog = {"C:/Program Files/Git/bin/bash.exe", "-i", "-l"},
 }
 
 -- Scrollback mode: Control+Shift+F
