@@ -1,3 +1,9 @@
+" set shell=C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+set shell=C:\\Windows\\System32\\cmd.exe
+" set shellcmdflag=-command
+set shellquote="
+set shellxquote=
+
 " For editing multiple lines in vim, use 1. `V:! sd` 2. macros 3. `V:norm`.
 " Vim motion options: f/F/t/T for horizontal, pounce.nvim for vertical, */#, search, goto definition
 " Paste text vertically using visual block mode https://stackoverflow.com/a/27542895

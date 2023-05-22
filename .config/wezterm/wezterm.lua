@@ -1,5 +1,11 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
+local mux = wezterm.mux
+
+wezterm.on("gui-startup", function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  window:gui_window():maximize()
+end)
 
 return {
   check_for_updates = false,
@@ -47,4 +53,5 @@ return {
   -- performance
   cursor_blink_ease_in = "Constant",
   cursor_blink_ease_out = "Constant",
+  default_prog = {"C:/Users/tahag_science/scoop/apps/git/current/bin/bash.exe", "-i", "-l"},
 }
